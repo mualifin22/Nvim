@@ -30,12 +30,11 @@ dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
-require "nvchad.autocmds"
+require "autocmds"
 
 vim.schedule(function()
   require "mappings"
 end)
-
 
 os.execute("python ~/.config/nvim/pywal/chadwal.py &> /dev/null &")
 
@@ -47,3 +46,6 @@ autocmd("Signal", {
     require('nvchad.utils').reload()
   end
 })
+
+require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/lua/custom/snippets" })
+

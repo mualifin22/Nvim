@@ -3,8 +3,6 @@
 -- Please read that file to know all available options :( 
 
 ---@type ChadrcConfig
-require("custom.init")
-
 local M = {}
 
 M.base46 = {
