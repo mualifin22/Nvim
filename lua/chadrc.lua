@@ -8,7 +8,7 @@ require("custom.init")
 local M = {}
 
 M.base46 = {
-	theme = "ashes",
+	theme = "chadwal",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
